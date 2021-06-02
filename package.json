@@ -1,0 +1,50 @@
+{
+  "name": "report-template",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": ">=14.15.1"
+  },
+  "leanixReport": {
+    "id": "net.leanix.report-template",
+    "title": "Report Template",
+    "defaultConfig": {}
+  },
+  "leanixReportingCli": {
+    "distPath": "dist",
+    "buildCommand": "node_modules/.bin/webpack"
+  },
+  "scripts": {
+    "build": "lxr build",
+    "start": "lxr start",
+    "upload": "lxr upload",
+    "webpack": "webpack"
+  },
+  "keywords": [
+    "leanix",
+    "custom-report"
+  ],
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^3.2.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@leanix/reporting": "^0.4.73",
+    "@leanix/reporting-dimensions": "0.0.60",
+    "lodash": "^4.17.11",
+    "memoize-one": "^5.1.1"
+  }
+}
